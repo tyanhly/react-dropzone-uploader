@@ -655,7 +655,7 @@ class Dropzone extends React.Component<IDropzoneProps, { active: boolean; dragge
     }
 
     const input =
-      InputComponent !== null ? (
+      InputComponent: JSX.Element[] | null  !== null ? (
         //@ts-ignore
         <Input
           className={inputClassName}
